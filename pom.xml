@@ -168,7 +168,14 @@
           <instructions>
             <Embed-Transitive>true</Embed-Transitive>
             <Embed-Dependency>org.apache.bval.bundle|bval-core|bval-jsr303</Embed-Dependency>
-            <Import-Package>!org.apache.bval.xml,*</Import-Package>
+            <Import-Package>
+            !org.apache.bval.xml,
+            *
+            </Import-Package>
+            <Export-Package>
+            org.apache.bval.constraints,
+            *
+            </Export-Package>
           </instructions>
         </configuration>
       </plugin>
