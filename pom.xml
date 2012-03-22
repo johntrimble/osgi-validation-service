@@ -169,12 +169,21 @@
             <Embed-Transitive>true</Embed-Transitive>
             <Embed-Dependency>org.apache.bval.bundle|bval-core|bval-jsr303</Embed-Dependency>
             <Import-Package>
-            !org.apache.bval.xml,
-            *
+            javax.validation,
+            org.osgi.framework*,
+            org.osgi.service*,
+            org.slf4j,
+            org.apache.commons*,
+            javax.xml*,
+            org.xml.sax*,
+            !*
             </Import-Package>
             <Export-Package>
             org.apache.bval.constraints,
-            *
+            javax.validation*,
+            org.slf4j,
+            javax.xml*,
+            !*
             </Export-Package>
           </instructions>
         </configuration>
